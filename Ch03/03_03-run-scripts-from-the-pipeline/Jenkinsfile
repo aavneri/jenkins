@@ -17,6 +17,7 @@ pipeline {
         stage('print path') {
             steps {
                 echo  "WORKSPACE                  =  ${WORKSPACE}"
+                sh("ls -la")
             }
         }
         stage('Make executable') {
