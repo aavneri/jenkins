@@ -32,12 +32,12 @@ pipeline {
         }
         stage('Full path') {
             steps {
-                sh("${env.WORKSPACE}./Ch03/03_03-run-scripts-from-the-pipeline/Ch03/03_03-run-scripts-from-the-pipeline/fibonacci.sh ${env.NUMBER}")
+                sh("${env.WORKSPACE}/Ch03/03_03-run-scripts-from-the-pipeline/Ch03/03_03-run-scripts-from-the-pipeline/fibonacci.sh ${env.NUMBER}")
             }
         }
         stage('Change directory') {
             steps {
-                dir("${env.WORKSPACE}./Ch03/03_03-run-scripts-from-the-pipeline/Ch03/03_03-run-scripts-from-the-pipeline/fibonacci.sh"){
+                dir("${env.WORKSPACE}/Ch03/03_03-run-scripts-from-the-pipeline/Ch03/03_03-run-scripts-from-the-pipeline/fibonacci.sh"){
                     sh("./fibonacci.sh ${env.NUMBER}")
                 }
             }
