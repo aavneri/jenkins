@@ -16,8 +16,7 @@ pipeline {
     stages {
         stage('print path') {
             steps {
-                echo  "WORKSPACE                  =  ${WORKSPACE}"
-                sh("ls -la")
+                sh("ls ./Ch03/03_03-run-scripts-from-the-pipeline -la")
             }
         }
         stage('Make executable') {
