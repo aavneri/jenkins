@@ -22,22 +22,22 @@ pipeline {
         }
         stage('Make executable') {
             steps {
-                sh('chmod +x ./Ch03/03_03-run-scripts-from-the-pipeline/fibonacci.sh')
+                sh('chmod +x ./Ch03/03_03-run-scripts-from-the-pipeline/Ch03/03_03-run-scripts-from-the-pipeline/fibonacci.sh')
             }
         }
         stage('Relative path') {
             steps {
-                sh("./Ch03/03_03-run-scripts-from-the-pipeline/fibonacci.sh ${env.NUMBER}")
+                sh("./Ch03/03_03-run-scripts-from-the-pipeline/Ch03/03_03-run-scripts-from-the-pipeline/fibonacci.sh ${env.NUMBER}")
             }
         }
         stage('Full path') {
             steps {
-                sh("${env.WORKSPACE}/Ch03/03_03-run-scripts-from-the-pipeline/fibonacci.sh ${env.NUMBER}")
+                sh("${env.WORKSPACE}./Ch03/03_03-run-scripts-from-the-pipeline/Ch03/03_03-run-scripts-from-the-pipeline/fibonacci.sh ${env.NUMBER}")
             }
         }
         stage('Change directory') {
             steps {
-                dir("${env.WORKSPACE}/Ch03/03_03-run-scripts-from-the-pipeline/fibonacci.sh"){
+                dir("${env.WORKSPACE}./Ch03/03_03-run-scripts-from-the-pipeline/Ch03/03_03-run-scripts-from-the-pipeline/fibonacci.sh"){
                     sh("./fibonacci.sh ${env.NUMBER}")
                 }
             }
