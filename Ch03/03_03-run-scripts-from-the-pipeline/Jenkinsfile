@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('print path') {
             steps {
-                sh("ls ./Ch03/03_03-run-scripts-from-the-pipeline/ -la")
+                sh("find . -iname 'fibonacci'")
             }
         }
         stage('Make executable') {
