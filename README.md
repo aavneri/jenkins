@@ -1,4 +1,5 @@
 # Jenkins Essential Training
+[![Build Status](http://ec2-35-173-84-150.compute-1.amazonaws.com/buildStatus/icon?job=pipeline)](http://ec2-35-173-84-150.compute-1.amazonaws.com/job/pipeline/)
 This is the repository for the LinkedIn Learning course Jenkins Essential Training. The full course is available from [LinkedIn Learning][lil-course-url].
 
 ![Jenkins Essential Training][lil-thumbnail-url] 
